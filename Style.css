@@ -3,12 +3,8 @@
     text-align: center;
 }
 
-.carousel-caption {
-    bottom: 20px; /* Ajusta la posición del texto hacia abajo */
-}
-
 .carousel-caption h5 {
-    font-size: 1.5rem; /* Tamaño de fuente para el título */
+    font-size: 1rem; /* Tamaño de fuente para el título */
 }
 
 .carousel-caption p {
@@ -16,17 +12,84 @@
     margin-bottom: 10px; /* Espacio entre párrafos */
 }
 
-.list-group-item {
-    cursor: pointer; /* Cambia el cursor al pasar sobre los enlaces del índice */
-}
-
 /* Estilos adicionales para mejorar la presentación en general */
 body {
     font-family: Arial, sans-serif; /* Fuente predeterminada */
-    background-color: #f8f9fa; /* Color de fondo */
-    padding: 20px; /* Espaciado alrededor del contenido */
+    background-color: #3b2955; /* Color de fondo */
+    padding: 10px; /* Espaciado alrededor del contenido */
+}
+
+h3 {
+    color: white; /* Cambiar el color del texto a blanco */
+    text-align: center; /* Centrar el texto */
+
 }
 
 #imageIndex {
+    display: flex; /* Utilizar flexbox para alinear los elementos */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    list-style: none; /* Eliminar los estilos de viñetas de la lista */
+    padding: 0; /* Eliminar el relleno predeterminado */
     margin-top: 20px; /* Espacio superior para el índice de imágenes */
 }
+
+.list-group-item {
+    cursor: pointer; /* Cambia el cursor al pasar sobre los enlaces del índice */
+    flex: 1; /* Hacer que los elementos ocupen el mismo espacio */
+    text-align: center; /* Centrar el texto dentro de cada elemento */
+    margin: 5px; /* Agregar un margen entre los elementos */
+}
+
+#imageCarousel .img-fluid {
+    max-width: 100%; /* Ajustar el tamaño máximo de las imágenes al 100% del contenedor */
+    height: auto; /* Mantener la proporción */
+}
+
+.carousel-inner {
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    max-width: 70%; /* Ajustar el tamaño máximo de las imágenes al 70% del contenedor */
+    height: auto; /* Mantener la proporción */
+    margin: 10px; /* Agregar margen alrededor de las imágenes */
+    padding: 10px; /* Agregar relleno alrededor de las imágenes */
+    border: 5px solid black; /* Agregar borde a las imágenes */
+    border-radius: 10px; /* Agregar borde redondeado a las imágenes */
+    box-shadow: 6px 6px 6px 6px rgb(159, 153, 170); /* Agregar sombra a las imágenes */
+        
+}
+
+.img-fluid {
+    width: 100%; /* Establecer un ancho del 100% para que todas las imágenes tengan el mismo tamaño */
+    height: auto; /* Mantener la proporción */
+}
+
+#imageCarousel .carousel-caption {
+    bottom: 1px; /* Ajusta la posición del texto hacia abajo */
+}
+
+#imageCarousel .carousel-caption h5 {
+    font-size: 2rem; /* Tamaño de fuente para el título */
+}
+
+#imageCarousel .carousel-caption p {
+    font-size: 1rem; /* Tamaño de fuente para la descripción */
+    margin-bottom: 10px; /* Espacio entre párrafos */
+}
+
+#imageCarousel .carousel-indicators {
+    bottom: 1px; /* Ajusta la posición de los indicadores hacia abajo */
+}
+
+#imageCarousel .carousel-control-next-icon,
+#imageCarousel .carousel-control-prev-icon {
+    color: #333; /* Cambiar el color de los iconos de control */
+    font-size: 1rem; /* Ajustar el tamaño de los iconos */
+}
+
+#imageCarousel {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar una sombra suave al carrusel */
+}
+
+#imageCarousel .carousel-indicators li {
+    background-color: #007bff; /* Cambiar el color de fondo de los indicadores */
+}
+

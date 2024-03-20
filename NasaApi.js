@@ -22,7 +22,6 @@ const renderImages = (data) => {
         const imageUrl = imageData.url;
         const imageTitle = imageData.title;
 
-        // Crear elementos de carrusel e índice aquí
         const carouselItem = document.createElement('div');
         carouselItem.classList.add('carousel-item');
         if (index === 0) {
@@ -67,7 +66,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (data) {
             renderImages(data);
 
-            const indexLinks = document.querySelectorAll('#imageIndex a');
             const carousel = new bootstrap.Carousel(document.getElementById('imageCarousel'));
 
             indexLinks.forEach((link, index) => {
@@ -78,7 +76,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
             
         } else {
-            // Manejar el caso en que no se puedan obtener los datos
             console.error('No se pudieron obtener los datos de la API.');
         }
     } catch (error) {
