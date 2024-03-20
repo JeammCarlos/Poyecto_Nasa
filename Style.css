@@ -1,0 +1,32 @@
+/* Estilos para el carrusel y el índice de imágenes */
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-caption {
+    bottom: 20px; /* Ajusta la posición del texto hacia abajo */
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem; /* Tamaño de fuente para el título */
+}
+
+.carousel-caption p {
+    font-size: 1rem; /* Tamaño de fuente para la descripción */
+    margin-bottom: 10px; /* Espacio entre párrafos */
+}
+
+.list-group-item {
+    cursor: pointer; /* Cambia el cursor al pasar sobre los enlaces del índice */
+}
+
+/* Estilos adicionales para mejorar la presentación en general */
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+#imageIndex {
+    margin-top: 20px; /* Espacio superior para el índice de imágenes */
+}
