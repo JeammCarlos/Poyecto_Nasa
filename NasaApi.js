@@ -1,5 +1,5 @@
 const NASA_Api = 'zNjGmzCpc4IYl4M1qYWdtTdITZ4T5XeQvFiljH91';
-const UrlNasa = 'https://api.nasa.gov/planetary/apod?api_key=' + NASA_Api + '&count=10'; // Solicitar 10 imágenes, puedes ajustar este número según tus necesidades
+const UrlNasa = 'https://api.nasa.gov/planetary/apod?api_key=' + NASA_Api + '&count=3'; // Solicitar imágenes.
 
 const fetchData = async (url) => {
     try {
@@ -68,10 +68,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const carousel = new bootstrap.Carousel(document.getElementById('imageCarousel'));
 
-            indexLinks.forEach((link, index) => {
+            document.querySelectorAll('#imageIndex a').forEach((link, index) => {
                 link.addEventListener('click', function(event) {
                     event.preventDefault();
                     carousel.to(index);
+
+                    const imageId = `#image${index}`;
+                    const targetImage = document.querySelector(imageId);
+                    targetImage.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 });
             });
             
