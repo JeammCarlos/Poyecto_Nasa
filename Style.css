@@ -93,3 +93,13 @@ h3 {
     background-color: #007bff; /* Cambiar el color de fondo de los indicadores */
 }
 
+.carouselslide {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
