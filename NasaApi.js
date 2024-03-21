@@ -1,6 +1,6 @@
 // Variables globales
 const NASA_Api = 'zNjGmzCpc4IYl4M1qYWdtTdITZ4T5XeQvFiljH91';
-const UrlNasa = `https://api.nasa.gov/planetary/apod?api_key=${NASA_Api}&count=10`; // Solicitar imágenes.
+const UrlNasa = `https://api.nasa.gov/planetary/apod?api_key=${NASA_Api}&count=3`; // Solicitar imágenes.
 
 // Función para obtener datos de la API de la NASA
 const fetchData = async (url) => {
