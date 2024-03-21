@@ -1,11 +1,11 @@
 // Variables globales
 const NASA_Api = 'zNjGmzCpc4IYl4M1qYWdtTdITZ4T5XeQvFiljH91';
-const UrlNasa = `https://api.nasa.gov/planetary/apod?api_key=${NASA_Api}&count=3`; // Solicitar imágenes.
+const UrlNasa = `https://api.nasa.gov/planetary/apod?api_key=${NASA_Api}&count=10`; // Solicitar imágenes.
 
 // Función para obtener datos de la API de la NASA
-const fetchData = async (url) => {
+const fetchData = async (hdurl) => {
     try {
-        const response = await fetch(url);
+        const response = await fetch(hdurl);
         if (!response.ok) {
             throw new Error('La respuesta de la API no fue exitosa');
         }
@@ -29,7 +29,7 @@ const renderImages = (data) => {
             carouselItem.classList.add('active');
         }
         carouselItem.innerHTML = `
-            <img src="${imageData.url}" class="d-block w-100" alt="${imageData.title}">
+            <img src="${imageData.hdurl}" class="d-block w-100" alt="${imageData.title}">
             <div class="carousel-caption d-none d-md-block">
                 <h5>${imageData.title}</h5>
                 <p>${imageData.explanation}</p>
