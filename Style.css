@@ -47,7 +47,7 @@ h3 {
 
 .carousel-inner {
     justify-content: center; /* Centrar los elementos horizontalmente */
-    max-width: 70%; /* Ajustar el tamaño máximo de las imágenes al 70% del contenedor */
+    max-width:fit-content; /* Ancho máximo del elemento será igual al ancho de su contenido, siempre y cuando este no exceda el tamaño del contenedor padre. */
     height: auto; /* Mantener la proporción */
     margin: 10px; /* Agregar margen alrededor de las imágenes */
     padding: 10px; /* Agregar relleno alrededor de las imágenes */
