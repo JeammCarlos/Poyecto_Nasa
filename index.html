@@ -11,6 +11,9 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col">
+                <button class="btn btn-primary" type="button" id="homeButton">Inicio</button> <!-- Botón de Inicio -->
+            </div>
+            <div class="col">
                 <div class="input-group mb-3">
                     <input type="text" id="searchInput" class="form-control" placeholder="Buscar imágenes de la NASA" aria-label="Buscar imágenes de la NASA" aria-describedby="button-addon">
                     <button class="btn btn-primary" type="button" id="searchButton">Buscar</button>
@@ -18,7 +21,9 @@
             </div>
         </div>
 
-        <div class="row" id="imageGallery"></div>
+        <div class="row" id="imageGallery">
+            <!-- Aquí se mostrarán las imágenes y el índice -->
+        </div>
 
         <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
