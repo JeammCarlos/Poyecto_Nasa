@@ -8,6 +8,42 @@
     /* Agrega cualquier otro estilo que desees para la imagen */
 }
 
+.list-group-item {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 0.75rem 1.25rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &:hover {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    }
+    &:active {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+    } 
+    &:first-child {
+        border-top-right-radius: 0.25rem;
+        border-top-left-radius: 0.25rem;
+    }
+    &:last-child {
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+    }
+    &:not(:first-child):not(:last-child) {
+        border-radius: 0.25rem;
+    }
+
+}
+
 /* Estilos para el carrusel y el índice de imágenes */
 .carousel-item {
     text-align: center;
