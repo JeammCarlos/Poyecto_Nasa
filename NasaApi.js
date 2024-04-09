@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             // Inicializar el carrusel de Bootstrap con una velocidad de transición más lenta
             const carousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
-                interval: 8000 // Cambia el valor según sea necesario (en milisegundos)
+                interval: 9000 // Cambia el valor según sea necesario (en milisegundos)
             });
 
             // Agregar eventos de clic para el índice
