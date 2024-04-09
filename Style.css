@@ -1,3 +1,13 @@
+.Imagen-Nasa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto; /* Ajusta el ancho según sea necesario */
+    height: 200px; /* Esto mantendrá la proporción de la imagen */
+    z-index: 9999; /* Asegura que la imagen esté en la parte superior */
+    /* Agrega cualquier otro estilo que desees para la imagen */
+}
+
 /* Estilos para el carrusel y el índice de imágenes */
 .carousel-item {
     text-align: center;
