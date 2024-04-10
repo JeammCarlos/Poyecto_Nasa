@@ -8,8 +8,24 @@
     /* Agrega cualquier otro estilo que desees para la imagen */
 }
 
+.mt-3 {
+    display:inline;
+    float:inline-start;
+}
+
+.list-group {
+    display:inline;
+    
+}
+
+#imageIndex {
+    display:inline;
+    
+}
+
 .list-group-item {
-    background-color: transparent;
+    display: inline;
+    background-color:currentColor;
     border: 0;
     border-radius: 0;
     color: #fff;
